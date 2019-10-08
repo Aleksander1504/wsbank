@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Main</string>
+    <string name="in_in_name">WorldSkills Bank!</string>
+    <string name="text_bottom">Авторизируйтесь</string>
+    <string name="text_map">Отделения и банкоматы</string>
+    <string name="text_Currency">Курсы валют</string>
+    <string name="text_auth">Войти</string>
+</resources>

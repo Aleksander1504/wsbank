@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/root_element"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/in_in_name"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="40dp"
+            app:fontFamily="@font/montserrat_bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/text_bottom"
+        android:textColor="@color/text_Bottom"
+        android:textSize="25dp"
+        app:fontFamily="@font/montserrat" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="3"
+        android:layout_above="@+id/text_bottom"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="370dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:text="@string/text_map" />
+
+        <Button
+            android:id="@+id/btnCurrency"
+            android:layout_width="370dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:text="@string/text_Currency" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="370dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="180dp"
+            android:textSize="25dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_sign_in"
+            android:layout_weight="1"
+            android:text="@string/text_auth" />
+    </LinearLayout>
+</RelativeLayout>
